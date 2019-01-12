@@ -1,0 +1,1 @@
+/usr/bin/gcc  -fPIC   -shared -Wl,-soname,libztstring.so -o libztstring.so CMakeFiles/ztstring.dir/main.c.o CMakeFiles/ztstring.dir/ztstring.c.o 

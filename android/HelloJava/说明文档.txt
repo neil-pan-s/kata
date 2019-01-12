@@ -1,0 +1,9 @@
+
+-------------
+Java Class
+-------------
+
+1.cd F:\AndroidStudioProjects\HelloJava\demo\org\ichanging
+2.javac HelloJava.java //编译java
+3.cd F:\AndroidStudioProjects\HelloJava
+4.java demo.org.ichanging.HelloJava //执行HelloJava中的 main

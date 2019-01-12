@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demo.org.ichanging.otherswidget.ScrollViewDemo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView" >
+
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="\n
+		错误\n
+		郑愁予\n
+		\n
+		我打江南走过\n
+		那等在季节里的容颜如莲花的开落\n
+		\n
+		东风不来\n
+		三月的柳絮不飞\n
+		你的心如小小的寂寞的城\n
+		恰若青石的街道向晚\n
+		\n
+		跫音不项\n
+		三月的春帷不揭\n
+		你底心是小小的窗扉紧掩\n
+		\n
+		我达达的马蹄声是美丽的错误\n
+		我不是归人\n
+		是个过客……\n"
+					android:id="@+id/textView"
+					android:textSize="8pt"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="\n
+		错误\n
+		郑愁予\n
+		\n
+		我打江南走过 那等在季节里的容颜 如莲花的开落\n
+		\n
+		东风不来 三月的柳絮不飞 你的心如小小的寂寞的城 恰若青石的街道向晚\n
+		\n
+		跫音不项 三月的春帷不揭 你底心是小小的窗扉紧掩\n
+		\n
+		我达达的马蹄声是美丽的错误 我不是归人 是个过客……\n"
+					android:id="@+id/textView2"
+					android:textSize="8pt"/>
+
+			</LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+
+Quick-Public 库整理计划 
+
+PS: 本库 arm-linux 皆为 arm-linux-gcc 4.4.3 版本 编译 
+
+----------------
+整理进度
+----------------
+
+2015-04-12
+1.整理完成  xml json 
+
+2015-04-09
+1.整理完成 cmake demo
+
+2015-04-06
+1.整理完成 process 接口
+
+2015-04-05
+1.整理完成 thread 接口
+
+2015-03-28
+1.整理完成 libiconv loger mutex file 接口
+
+2015-03-27
+1. 整理 clist des fifo md5 serial sha1 sqlite mutex socket loger接口
+
+2015-03-26 
+1. 整理完成 libcurl 接口
+
+2015-03-24
+1. 整理完成 openssl 接口

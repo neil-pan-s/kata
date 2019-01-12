@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:fragment="demo.org.ichanging.fragment.PerferenceActivityDemo$Prefs1Fragment"
+        android:title="App Setting"
+        android:summary="About Setting"
+        />
+    <header android:fragment="demo.org.ichanging.fragment.PerferenceActivityDemo$Prefs2Fragment"
+        android:title="UI Setting"
+        android:summary="About UI Setting"
+        />
+
+    <header
+        android:title="Use Intent"
+        android:summary="Intent Turn Activity"
+        >
+        <intent android:action="android.intent.action.VIEW" android:data="http://www.baidu.com" />
+    </header>
+</preference-headers>

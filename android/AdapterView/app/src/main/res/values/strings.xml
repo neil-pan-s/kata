@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AdapterView</string>
+    <string name="tip">choose your book</string>
+</resources>

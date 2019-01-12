@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NFC</string>
+    <string name="ndef_read_title">NdefRead</string>
+    <string name="ndef_push_title">NdefPush</string>
+    <string name="simulator_title">Simulator</string>
+
+</resources>

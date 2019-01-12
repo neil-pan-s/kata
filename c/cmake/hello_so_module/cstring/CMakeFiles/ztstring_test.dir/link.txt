@@ -1,0 +1,1 @@
+/usr/bin/gcc     CMakeFiles/ztstring_test.dir/main.c.o CMakeFiles/ztstring_test.dir/ztstring.c.o  -o ztstring_test -rdynamic 

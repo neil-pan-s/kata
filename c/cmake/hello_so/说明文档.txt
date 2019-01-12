@@ -1,0 +1,5 @@
+
+# 编译方法
+# Step 1. 在 build目录下 执行 cmake ..
+# Step 2. 在 build目录下 执行 make
+# Step 3. 在 build目录下 执行 make install 

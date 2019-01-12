@@ -1,0 +1,2 @@
+/home/code/doing/cmake/hello_so/demo/hello_so
+/home/code/doing/cmake/hello_so/demo/lib/libztstring.so

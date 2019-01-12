@@ -1,0 +1,1 @@
+/home/gcc/4.4.3/bin/arm-linux-gcc  -g -Wall -DZT_DEBUG   CMakeFiles/ztstring_test.dir/main.c.o CMakeFiles/ztstring_test.dir/ztstring.c.o  -o ../../cstring/ztstring_test -rdynamic 

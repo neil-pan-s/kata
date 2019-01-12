@@ -1,0 +1,1 @@
+/home/gcc/4.4.3/bin/arm-linux-gcc  -g -Wall -DZT_DEBUG   CMakeFiles/hello_so.dir/main.c.o  -o ../hello_so -rdynamic ../cstring/libztstring.so -Wl,-rpath,/home/code/doing/cmake/hello_so/cstring: 

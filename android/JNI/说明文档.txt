@@ -1,0 +1,39 @@
+-------------
+JNI
+-------------
+
+资料参考： D:\Android\android-ndk-r10d\samples\
+
+eg. 包名 demo.org.ichanging.jni
+	Jni接口类 JniHello.java 
+	工程路径 F:\AndroidStudioProjects\JNI\
+
+1.javac JniHello.java  或 直接在 Android Studio中 Make Project/运行
+2.javah -classpath . -jni demo.org.ichanging.jni.JniHello  
+	PS: 以Android Studio 为例  
+		-classpath 指令位置为  F:\AndroidStudioProjects\JNI\app\build\intermediates\classes\debug
+		指定类的路径时，应该以 包 所在路径为准，而不是具体class 所在的子目录
+	得到头文件 demo_org_ichanging_jni_JniHello.h
+3.实现 JniHello.cpp 添加 Android.mk 和 Application.mk 项目文件夹名 必须为 jni 
+4.NDK环境配置 系统添加环境变量 PATH 后增加  NDK路径 ;D:\Android\android-ndk-r10d
+5.在jni 文件夹下执行 ndk-build 
+	error:parameter name omitted 
+	方法缺少参数名。由于h头文件是没有参数名的，所以很容易在C文件忘记加上
+	eg. 头文件中声明 JNIEXPORT void JNICALL hello(JNIEnv * , jobject )
+		源文件中实现未增加形参 JNIEXPORT void JNICALL hello(JNIEnv * env, jobject obj)
+6.执行成功后 会在 ../jni 目录下生成 libs 和 objs 目录 libs下为各平台的so 文件
+7.添加 对应平台下的so 文件到 Android Studio 在java 同级目录（src/main） 添加jniLibs文件夹 将so文件复制、粘贴到“jniLibs”目录内。  
+	PS:在用真机测试时，最好先通过adb shell， cat  /proc/cpuinfo ，来查看下真机是否是支持
+8.调用相关接口 编译安装即可
+	
+Android.mk 参数说明 
+LOCAL_MODULE参数是指定编译后的目标文件的名称，其实编译好的目标文件名为libhello.so，
+LOCAL_SRC_FILES指定了要编译的源文件。
+
+还可以通过修改Application.mk文件来指定生成的动态库的类型：
+如按以的修改则只会生成一种动态库:
+# Build both ARMv5TE and ARMv7-A machine code.
+APP_ABI := armeabi x86
+
+也可所设置成生成所有平台都支持的动态库:
+APP_ABI :=all

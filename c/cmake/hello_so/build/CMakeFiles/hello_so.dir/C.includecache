@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../cstring/ztstring.h
+
+/home/code/doing/cmake/hello_so/main.c
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+unistd.h
+-
+fcntl.h
+-
+ztstring.h
+/home/code/doing/cmake/hello_so/ztstring.h
+

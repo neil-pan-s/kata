@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books>
+    <book price="100.0" pubdate="2008"> Harry Potty 1</book>
+    <book price="101.0" pubdate="2009"> Harry Potty 2</book>
+    <book price="102.0" pubdate="2010"> Harry Potty 3</book>
+    <book price="103.0" pubdate="2011"> Harry Potty 4</book>
+    <book price="104.0" pubdate="2012"> Harry Potty 5</book>
+    <book price="105.0" pubdate="2013"> Harry Potty 6</book>
+
+</books>

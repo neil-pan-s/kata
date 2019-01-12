@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Light Group">
+        <ListPreference
+            android:key="Light"
+            android:title="Light Level"
+            android:summary="Light Level"
+            android:dialogTitle="Light Level"
+            android:entries="@array/light_strength_list"
+            android:entryValues="@array/light_value_list"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Words Group">
+        <SwitchPreference
+            android:key="autoScroll"
+            android:title="Auto Scroll"
+            android:summaryOn="On"
+            android:summaryOff="Off"
+            android:defaultValue="true"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

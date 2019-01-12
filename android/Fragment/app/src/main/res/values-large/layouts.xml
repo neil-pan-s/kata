@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="activity_book_demo" type="layout">@layout/activity_book_two_panes</item>
+    <bool name="pane_flag">true</bool>
+</resources>

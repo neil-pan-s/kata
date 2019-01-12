@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".IntentFilterActivity">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Component Intent"
+        android:id="@+id/buttonComponent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Action Button"
+        android:id="@+id/buttonAction"
+        android:layout_below="@+id/buttonComponent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category Intent"
+        android:id="@+id/buttonCate"
+        android:layout_below="@+id/buttonAction"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home intent"
+        android:id="@+id/buttonHome"
+        android:layout_below="@+id/buttonCate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Scheme intent"
+        android:id="@+id/buttonScheme"
+        android:layout_below="@+id/buttonHome"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Scheme Host Port Intent"
+        android:id="@+id/buttonSHPort"
+        android:layout_below="@+id/buttonScheme"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Scheme Host Path Intent"
+        android:id="@+id/buttonSHPath"
+        android:layout_below="@+id/buttonSHPort"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Scheme Host Port Path Intent"
+        android:id="@+id/buttonSHPP"
+        android:layout_below="@+id/buttonSHPath"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Scheme Host Port Path MimeType Intent"
+        android:id="@+id/buttonHPPM"
+        android:layout_below="@+id/buttonSHPP"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

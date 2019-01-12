@@ -1,0 +1,3 @@
+/home/code/doing/cmake/hello_so/CMakeFiles/hello_so.dir
+/home/code/doing/cmake/hello_so/cstring/CMakeFiles/ztstring.dir
+/home/code/doing/cmake/hello_so/cstring/CMakeFiles/ztstring_test.dir

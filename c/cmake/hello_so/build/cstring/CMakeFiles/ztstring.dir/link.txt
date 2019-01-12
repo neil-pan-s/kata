@@ -1,0 +1,1 @@
+/home/gcc/4.4.3/bin/arm-linux-gcc  -fPIC -g -Wall -DZT_DEBUG  -shared -Wl,-soname,libztstring.so -o ../../cstring/libztstring.so CMakeFiles/ztstring.dir/main.c.o CMakeFiles/ztstring.dir/ztstring.c.o 

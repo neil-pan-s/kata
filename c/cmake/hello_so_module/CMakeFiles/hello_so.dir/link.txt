@@ -1,0 +1,1 @@
+/usr/bin/gcc     CMakeFiles/hello_so.dir/main.c.o  -o hello_so -rdynamic cstring/libztstring.a 

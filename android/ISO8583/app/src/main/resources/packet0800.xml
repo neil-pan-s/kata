@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE j8583-config PUBLIC "-//J8583//DTD CONFIG 1.0//EN"
+	"http://j8583.sourceforge.net/j8583.dtd">
+<j8583-config>
+<!-- This is a test config file -->
+
+<!-- These are the ISO headers to be prepended to the message types specified -->
+<header type="0800">603100011001</header>
+<header type="0810" ref="0800"/>
+
+<!-- The client example uses this to create requests -->
+<template type="0800">
+	<field num="11" type="NUMERIC" length="6">001073</field>
+	<field num="41" type="ALPHA" length="8">00000026</field>
+	<field num="42" type="ALPHA" length="15">852331059980072</field>
+	<field num="60" type="LLLBIN">00000015004</field>
+	<field num="63" type="LLLVAR">01 </field>
+</template>
+
+<!-- The server example uses this to read the requests -->
+<parse type="0810">
+	<field num="11" type="NUMERIC" length="6"/>
+	<field num="12" type="NUMERIC" length="6"/>
+	<field num="13" type="NUMERIC" length="4"/>
+	<field num="32" type="LLVAR"/>
+	<field num="37" type="ALPHA" length="12"/>
+	<field num="39" type="ALPHA" length="2"/>
+	<field num="41" type="ALPHA" length="8"/>
+	<field num="42" type="ALPHA" length="15"/>
+	<field num="60" type="LLLVAR" />
+	<field num="62" type="LLLVAR" />
+	<field num="63" type="LLLVAR" />
+</parse>
+
+</j8583-config>

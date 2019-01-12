@@ -1,0 +1,33 @@
+
+------------------
+Android 学习笔记
+------------------
+
+2016.04.23
+Jar 打包学习
+
+2016.04.22
+LiteBle 开源库框架学习
+实现LiteBle 调用 RY00
+
+
+2016.04.17
+-_-!! 通宵啊啊啊 
+BLE
+a.实现RY8100读取版本号 和 读卡
+
+2016.04.15
+NFC
+a.模拟NDEF消息处理 TEXT 和 URI ok
+b.Android Beam 交互　ok
+c.读银行卡 ok
+
+2016.04.13
+1.学习 material-design
+
+
+2016.04.12
+1.学习 JNI + 编译jar包
+2.学习 编译/执行 java class
+3.java main 方法传参
+

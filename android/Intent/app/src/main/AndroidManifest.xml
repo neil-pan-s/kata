@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="demo.org.ichanging.intent">
+
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IntentDemo">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".BundleIntent">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".BundleIntentHandler" />
+        <activity android:name=".EmptyDemo">
+            <intent-filter>
+                <action android:name="demo.org.ichanging.intent.action.TEST" />
+
+                <category android:name="demo.org.ichanging.intent.category.CATEGORY" />
+
+                <!-- this is must -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <!-- <data android:scheme="ichanging" /> -->
+                <!-- <data android:scheme="ichanging" android:host="www.ichanging.org"/> -->
+                <!-- <data android:scheme="ichanging" android:host="www.ichanging.org" -->
+                <!-- android:port="8888" /> -->
+                <!-- <data android:scheme="ichanging" android:host="www.ichanging.org" -->
+                <!-- android:path="/test" /> -->
+                <!-- <data android:scheme="ichanging" android:host="www.ichanging.org" -->
+                <!-- android:port="1234" -->
+                <!-- android:path="/test" /> -->
+
+                <data
+                    android:host="www.ichanging.org"
+                    android:mimeType="abc/xyz"
+                    android:path="/test"
+                    android:port="1234"
+                    android:scheme="ichanging" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SelectCityDemo" />
+        <activity android:name=".ActivityLifeDemo">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".IntentFilterActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".IntentSystemActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
