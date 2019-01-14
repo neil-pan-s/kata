@@ -1,0 +1,1 @@
+dart2js -O2 -o test.js test.dart

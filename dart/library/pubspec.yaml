@@ -1,0 +1,15 @@
+name: hello
+version: 0.0.1
+description: >-
+  A demo library 
+author: Neil Pan <i@neil-pan.com>
+homepage: https://github.com/neil-pan-s
+
+environment:
+  sdk: '>=2.0.0 <3.0.0'
+
+dependencies:
+  async: ^2.0.7
+
+dev_dependencies:
+  test: ^1.3.4

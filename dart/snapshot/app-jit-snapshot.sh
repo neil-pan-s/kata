@@ -1,0 +1,1 @@
+dart --snapshot=hello.dart.app-jit.snapshot --snapshot-kind=app-jit hello.dart
